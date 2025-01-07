@@ -22,5 +22,10 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "baseUrl": ".", // 프로젝트의 루트를 기준으로 설정
+  "paths": {
+    "@api/*": ["api/*"], // api 폴더 경로 별칭
+    "@utils/*": ["utils/*"] // utils 폴더 경로 별칭
+  }
 }
